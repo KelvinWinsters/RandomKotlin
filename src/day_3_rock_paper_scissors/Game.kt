@@ -38,7 +38,8 @@ fun printResults(userChoice: String, gameChoice: String) {
     if (userChoice == gameChoice) result = "Tie"
     else if ((userChoice == "rock" && gameChoice == "scissors") ||
         (userChoice == "paper" && gameChoice == "rock") ||
-        (userChoice == "scissors" && gameChoice == "paper")) result = "You win!"
+        (userChoice == "scissors" && gameChoice == "paper")
+    ) result = "You win!"
     else result = "You lose!"
     println("You chose $userChoice. I chose $gameChoice. $result")
 }
