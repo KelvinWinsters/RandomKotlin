@@ -16,9 +16,9 @@ fun getUserChoice(optionParam: Array<String>): String {
     var userChoice = ""
     while (!isValidChoice) {
 //        get input from user
-        print("Please enter one of the following: ")
-        for (item in optionParam) print(" $item")
-        println(".")
+        println("Please enter one of the following: ")
+        for (item in optionParam) println(" $item.")
+//        println(".")
         val userInput = readLine()
         // validating the input
         if (userInput != null && userInput in optionParam) {
@@ -34,12 +34,20 @@ fun getUserChoice(optionParam: Array<String>): String {
 fun printResults(userChoice: String, gameChoice: String) {
 //    val result: String = if (userChoice == gameChoice) "Tie"
 
-    val result: String
-    if (userChoice == gameChoice) result = "Tie"
+//    val result: String
+//    if (userChoice == gameChoice) result = "Tie"
+//    else if ((userChoice == "rock" && gameChoice == "scissors") ||
+//        (userChoice == "paper" && gameChoice == "rock") ||
+//        (userChoice == "scissors" && gameChoice == "paper")
+//    ) result = "You win!"
+//    else result = "You lose!"
+//    println("You chose $userChoice. I chose $gameChoice. $result")
+
+    val result: String = if (userChoice == gameChoice) "Tie"
     else if ((userChoice == "rock" && gameChoice == "scissors") ||
         (userChoice == "paper" && gameChoice == "rock") ||
         (userChoice == "scissors" && gameChoice == "paper")
-    ) result = "You win!"
-    else result = "You lose!"
+    ) "You win!"
+    else "You lose!"
     println("You chose $userChoice. I chose $gameChoice. $result")
 }

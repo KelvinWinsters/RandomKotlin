@@ -1,10 +1,10 @@
-package day_1
+package day_1_basics
 
 fun main() {
     val x = 5
     val y = 7
     println(if (x > y) "$x is greater" else "$y is greater")
-    println("Done here")
+    println("Done here, Call another function")
     exercise()
 }
 

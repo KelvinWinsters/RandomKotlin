@@ -1,4 +1,6 @@
-package day_1
+package day_1_basics
+
+import java.util.*
 
 fun main() {
     println("Hello World")
@@ -28,5 +30,9 @@ fun main() {
         a += 1
     }
     println("After the loop a is : $a")
+
+    val name = "okumu kelvin"
+    println(name.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() })
+    println(name.uppercase(Locale.getDefault()))
 
 }
