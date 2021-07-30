@@ -1,4 +1,4 @@
-package day_5_moreoop.animals
+package day_5_moreoop.animals.wildanimals
 
 class Hippo : Animal() {
     override val image = "hippo.jpg"

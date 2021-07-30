@@ -1,4 +1,4 @@
-package day_5_moreoop.animals
+package day_5_moreoop.animals.wildanimals
 
 class Wolf : Canine() {
     override var image = "wolf.jpg"
@@ -12,10 +12,4 @@ class Wolf : Canine() {
     override fun eat() {
         println("The wolf is eating $food")
     }
-}
-
-fun main() {
-    val kk = Wolf()
-    println(kk.makeNoise())
-    println(kk.roam())
 }
