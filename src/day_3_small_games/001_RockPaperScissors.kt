@@ -1,4 +1,4 @@
-package day_3_rock_paper_scissors
+package day_3_small_games
 
 fun main() {
     val options = arrayOf("rock", "paper", "scissors")
